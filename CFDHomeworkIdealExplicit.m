@@ -44,6 +44,8 @@ Tnew(1,:) = Tbot;
 Tnew(:,1) = Twall;
 
 % Compute new temperature
+% TODO: This loop is by far the biggest bottleneck in the program, as we learn more in class this should be updated and 
+% improved. 
 
     for i=2:ny-1
         for j=2:nx-1
